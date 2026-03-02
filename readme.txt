@@ -3,7 +3,7 @@ Contributors: hidyk
 Tags: contact form 7, cf7, visited pages, tracker, analytics
 Requires at least: 6.6.1
 Tested up to: 6.9.1
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,10 +56,17 @@ Basically, add the [visited-pages] shortcode to the admin email, not the user au
 
 == Changelog ==
 
+= 1.1 =
+* Improved form data submission using CF7 wpcf7beforesubmit event for better reliability.
+* Updated Tested up to WordPress 6.9.1.
+
 = 1.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1 =
+* Improved reliability of visited pages data submission.
 
 = 1.0 =
 * Initial release.
