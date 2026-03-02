@@ -2,7 +2,7 @@
 Contributors: hidyk
 Tags: contact form 7, cf7, visited pages, tracker, analytics
 Requires at least: 6.6.1
-Tested up to: 6.6.1
+Tested up to: 6.9.1
 Stable tag: 1.0
 Requires PHP: 7.0
 License: GPLv2 or later
