@@ -3,7 +3,7 @@ Contributors: hidyk
 Tags: contact form 7, cf7, visited pages, tracker, analytics
 Requires at least: 6.6.1
 Tested up to: 6.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,6 +56,13 @@ Basically, add the [visited-pages] shortcode to the admin email, not the user au
 
 == Changelog ==
 
+= 1.2 =
+* Added page titles and visit timestamps to visited pages data.
+* Timestamps are displayed in WordPress timezone setting.
+* Fixed URL sanitization to preserve percent-encoded characters (e.g. non-ASCII URLs).
+* Added title resolution for custom post type archive pages.
+* Backward compatible with v1.1 data format.
+
 = 1.1 =
 * Improved form data submission using CF7 wpcf7beforesubmit event for better reliability.
 * Updated Tested up to WordPress 6.9.1.
@@ -64,6 +71,9 @@ Basically, add the [visited-pages] shortcode to the admin email, not the user au
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Visited pages now include page titles and visit times. Fixed non-ASCII URL handling.
 
 = 1.1 =
 * Improved reliability of visited pages data submission.

@@ -2,8 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var pageUrl = window.location.href;
     var visitedPages = JSON.parse(sessionStorage.getItem('visited_pages')) || [];
 
-    if (!visitedPages.includes(pageUrl)) {
-        visitedPages.push(pageUrl);
+    if (!visitedPages.some(function(page) { return page.url === pageUrl; })) {
+        visitedPages.push({
+            url: pageUrl,
+            visitedAt: new Date().toISOString()
+        });
     }
 
     sessionStorage.setItem('visited_pages', JSON.stringify(visitedPages));
